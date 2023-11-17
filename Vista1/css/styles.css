@@ -5,19 +5,26 @@
   font-style: normal;
 }
 @font-face {
-  font-family: "inter-bold";
+  font-family: "inter-semibold";
   src: url(fonts/Inter/static/Inter-SemiBold.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "inter-bold";
+  src: url(fonts/Inter/static/Inter-Bold.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "inter-regular";
+  src: url(fonts/Inter/static/Inter-Regular.ttf);
   font-weight: normal;
   font-style: normal;
 }
 * {
   margin: 0px;
   padding: 0px;
-  text-align: center;
-}
-
-body {
-  font-family: inter;
 }
 
 #section1 header {
@@ -38,7 +45,7 @@ body {
   padding: 10px;
   margin: 5px;
   list-style-type: none;
-  font-family: inter-bold;
+  font-family: inter-semibold;
 }
 #section1 header nav ul li a {
   text-decoration: none;
@@ -46,4 +53,78 @@ body {
 }
 #section1 header nav #logo img {
   padding: 8px;
+}
+#section1 #heading {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-top: 50px;
+}
+#section1 #heading #subscription {
+  padding-left: 20%;
+}
+#section1 #heading #subscription #information {
+  padding-bottom: 0px;
+}
+#section1 #heading #subscription #information h1 {
+  font-family: inter-bold;
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+#section1 #heading #subscription #information h3 {
+  font-family: inter-regular;
+  font-size: 20px;
+  color: #585757;
+  letter-spacing: -0.3px;
+}
+#section1 #heading #subscription input[type=text],
+#section1 #heading #subscription select {
+  width: 100%;
+  padding: 12px 15px;
+  margin: 5px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+#section1 #heading #subscription input[type=submit] {
+  font-family: inter-semibold;
+  font-size: 20px;
+  width: 100%;
+  background-color: #24AFB5;
+  color: white;
+  padding: 12px 15px;
+  margin: 16px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+#section1 #heading #subscription input[type=submit]:hover {
+  background-color: #24AFB5;
+}
+#section1 #heading #subscription #confirmSub {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+#section1 #heading #subscription div {
+  border-radius: 5px;
+  padding: 20px;
+}
+#section1 #heading #subscription div #confirmSub {
+  padding: 0px;
+}
+#section1 #heading #window img {
+  max-width: 100%;
+  height: auto;
+}
+#section1 #statistics {
+  margin-top: 5%;
+}
+#section1 #statistics .center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 10%;
+}
+#section1 #statistics p {
+  margin: 5%;
 }/*# sourceMappingURL=styles.css.map */
