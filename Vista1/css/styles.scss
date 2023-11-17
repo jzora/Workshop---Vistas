@@ -1,0 +1,65 @@
+@font-face {
+    font-family: "inter";
+    src: url(fonts/Inter/static/Inter-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "inter-bold";
+    src: url(fonts/Inter/static/Inter-SemiBold.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+$linkColor: #1C1C1C;
+
+* {
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+
+body {
+    font-family: inter;
+}
+
+#section1 {
+    header {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+       
+        nav {
+            display: grid;
+            grid-template-columns: 1fr 0.1fr 1fr;
+             grid-column-start: 2;
+
+            ul {
+
+                font-size: 15px;
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+
+                li {
+                    padding: 10px;
+                    margin: 5px;
+                    list-style-type: none;
+                    font-family: inter-bold;
+
+                    a {
+                        text-decoration: none;
+                        color: $linkColor;
+                        
+                    }
+                }
+            }
+
+            #logo{  
+                img{
+                    padding: 8px;
+                }
+            }
+        }
+    }
+}
