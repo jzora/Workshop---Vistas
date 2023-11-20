@@ -27,31 +27,33 @@
   padding: 0px;
 }
 
-#section1 header {
+#section1 #header {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
-#section1 header nav {
+#section1 #header #menu {
   display: grid;
   grid-template-columns: 1fr 0.1fr 1fr;
   grid-column-start: 2;
 }
-#section1 header nav ul {
+#section1 #header #menu ul {
   font-size: 15px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
-#section1 header nav ul li {
-  padding: 10px;
+#section1 #header #menu ul li {
+  width: 90px;
+  text-align: center;
+  padding: 15px;
   margin: 5px;
   list-style-type: none;
   font-family: inter-semibold;
 }
-#section1 header nav ul li a {
+#section1 #header #menu ul li a {
   text-decoration: none;
   color: #1C1C1C;
 }
-#section1 header nav #logo img {
+#section1 #header #menu #logo img {
   padding: 8px;
 }
 #section1 #heading {
@@ -124,7 +126,27 @@
   margin-left: auto;
   margin-right: auto;
   width: 10%;
+  margin-bottom: 5%;
 }
 #section1 #statistics p {
-  margin: 5%;
+  width: 45%;
+  text-align: center;
+  padding-left: 27.5%;
+  padding-right: 27.5%;
+  font-family: inter-regular;
+}
+
+#section2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 10%;
+}
+#section2 #lineHeaders {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  margin-left: 20%;
+}
+#section2 #lineHeaders .lines div {
+  display: grid;
+  grid-template-columns: 0.1fr 0.9fr;
 }/*# sourceMappingURL=styles.css.map */
