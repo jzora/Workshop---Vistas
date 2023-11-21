@@ -1,11 +1,13 @@
 @font-face {
-    font-family: "inter";
+    //Regular: 400
+    font-family: "inter-regular";
     src: url(fonts/Inter/static/Inter-Regular.ttf);
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
+    //Semibold: 600
     font-family: "inter-semibold";
     src: url(fonts/Inter/static/Inter-SemiBold.ttf);
     font-weight: normal;
@@ -13,21 +15,12 @@
 }
 
 @font-face {
+    //Bold: 700
     font-family: "inter-bold";
     src: url(fonts/Inter/static/Inter-Bold.ttf);
     font-weight: normal;
     font-style: normal;
 }
-
-@font-face {
-    font-family: "inter-regular";
-    src: url(fonts/Inter/static/Inter-Regular.ttf);
-    font-weight: normal;
-    font-style: normal;
-}
-
-
-
 
 $linkColor: #1C1C1C;
 $textColor: #585757;
@@ -100,8 +93,6 @@ $botonColor: #24AFB5;
                     color: $textColor;
                     letter-spacing: -0.3px;
                 }
-
-
             }
 
             input[type=text],
@@ -164,7 +155,7 @@ $botonColor: #24AFB5;
             margin-left: auto;
             margin-right: auto;
             width: 10%;
-            margin-bottom: 5%;
+            margin-bottom: 3%;
         }
 
         p {
@@ -182,19 +173,160 @@ $botonColor: #24AFB5;
     grid-template-columns: 1fr 1fr;
     margin-top: 10%;
 
-
+    img {
+        max-width: 80%;
+        height: auto;
+    }
 
     #lineHeaders {
         display: grid;
         grid-template-rows: 1fr 1fr 1fr;
         margin-left: 20%;
-        
-        .lines div{
-            display: grid;
-            grid-template-columns: 0.1fr 0.9fr;
+        margin-bottom: 10%;
+
+        .lines {
+
+            margin-bottom: 5%;
+
+            div {
+                display: grid;
+                grid-template-columns: 0.1fr 0.9fr;
+                font-family: inter-semibold;
+                font-size: 24px;
+
+                img {
+                    padding-top: 10%;
+                }
+            }
+
+            p {
+                font-family: inter-regular;
+                font-size: 15px;
+                padding-right: 7%;
+            }
         }
+
+
+    }
+}
+
+#section3 {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 10%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    #percentages {
+        margin-top: 15%;
+        display: grid;
+
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+
+        .pointing {
+            display: grid;
+            grid-template-columns: .3fr 1fr;
+        }
+
+        .description {
+            margin-top: 10%;
+            margin-left: 23%;
+        }
+    }
+
+    #videogames {
+        p {
+            margin-top: 13%;
+        }
+    }
+}
+
+#section4 {
+    text-align: center;
+    margin-top: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
+
+    h1 {
+        font-family: inter-bold;
+        font-size: 48px;
+    }
+
+    p {
+        margin-top: 2%;
+        margin-left: 20%;
+        margin-right: 20%;
+        font-family: inter-regular;
+        font-size: 20px;
+    }
+
+    .features {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        margin-top: 5%;
+        margin-left: 10%;
+        margin-right: 10%;
+
+        h3 {
+            margin-top: 3%;
+        }
+    }
+
+    img {
+        margin-top: 5%;
+        max-width: 90%;
+        height: auto;
+    }
+
+}
+
+#section5 {
+    text-align: center;
+    margin-top: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
+
+    #changeableinfo {
+        display: grid;
+        grid-template-columns: .1fr 1fr .1fr;
+        padding-left: 5%;
+        padding-right: 5%;
+        margin-top: 2%;
+        font-family: inter-regular;
+        color: $textColor;
+
+        font-size: 20px;
+
+        img {
+            margin-top: 55%;
+        }
+    }
+
+    img {
+        margin-top: 4%;
+    }
+
+    h1 {
+        font-family: inter-semibold;
+        font-size: 20px;
+        margin-top: 2%;
+    }
+
+    h2 {
+        font-family: inter-regular;
+        font-size: 15px;
+        color: $textColor;
+        margin-top: .5%;
 
     }
 
+    h3 {
+        font-family: inter-semibold;
+        font-size: 15px;
+        color:$botonColor;
+        margin-top: 3%;
+
+    }
 
 }

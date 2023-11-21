@@ -1,5 +1,5 @@
 @font-face {
-  font-family: "inter";
+  font-family: "inter-regular";
   src: url(fonts/Inter/static/Inter-Regular.ttf);
   font-weight: normal;
   font-style: normal;
@@ -13,12 +13,6 @@
 @font-face {
   font-family: "inter-bold";
   src: url(fonts/Inter/static/Inter-Bold.ttf);
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: "inter-regular";
-  src: url(fonts/Inter/static/Inter-Regular.ttf);
   font-weight: normal;
   font-style: normal;
 }
@@ -126,7 +120,7 @@
   margin-left: auto;
   margin-right: auto;
   width: 10%;
-  margin-bottom: 5%;
+  margin-bottom: 3%;
 }
 #section1 #statistics p {
   width: 45%;
@@ -141,12 +135,128 @@
   grid-template-columns: 1fr 1fr;
   margin-top: 10%;
 }
+#section2 img {
+  max-width: 80%;
+  height: auto;
+}
 #section2 #lineHeaders {
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
   margin-left: 20%;
+  margin-bottom: 10%;
+}
+#section2 #lineHeaders .lines {
+  margin-bottom: 5%;
 }
 #section2 #lineHeaders .lines div {
   display: grid;
   grid-template-columns: 0.1fr 0.9fr;
+  font-family: inter-semibold;
+  font-size: 24px;
+}
+#section2 #lineHeaders .lines div img {
+  padding-top: 10%;
+}
+#section2 #lineHeaders .lines p {
+  font-family: inter-regular;
+  font-size: 15px;
+  padding-right: 7%;
+}
+
+#section3 {
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 10%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+#section3 #percentages {
+  margin-top: 15%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+#section3 #percentages .pointing {
+  display: grid;
+  grid-template-columns: 0.3fr 1fr;
+}
+#section3 #percentages .description {
+  margin-top: 10%;
+  margin-left: 23%;
+}
+#section3 #videogames p {
+  margin-top: 13%;
+}
+
+#section4 {
+  text-align: center;
+  margin-top: 10%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+#section4 h1 {
+  font-family: inter-bold;
+  font-size: 48px;
+}
+#section4 p {
+  margin-top: 2%;
+  margin-left: 20%;
+  margin-right: 20%;
+  font-family: inter-regular;
+  font-size: 20px;
+}
+#section4 .features {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin-top: 5%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+#section4 .features h3 {
+  margin-top: 3%;
+}
+#section4 img {
+  margin-top: 5%;
+  max-width: 90%;
+  height: auto;
+}
+
+#section5 {
+  text-align: center;
+  margin-top: 10%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+#section5 #changeableinfo {
+  display: grid;
+  grid-template-columns: 0.1fr 1fr 0.1fr;
+  padding-left: 5%;
+  padding-right: 5%;
+  margin-top: 2%;
+  font-family: inter-regular;
+  color: #585757;
+  font-size: 20px;
+}
+#section5 #changeableinfo img {
+  margin-top: 55%;
+}
+#section5 img {
+  margin-top: 4%;
+}
+#section5 h1 {
+  font-family: inter-semibold;
+  font-size: 20px;
+  margin-top: 2%;
+}
+#section5 h2 {
+  font-family: inter-regular;
+  font-size: 15px;
+  color: #585757;
+  margin-top: 0.5%;
+}
+#section5 h3 {
+  font-family: inter-semibold;
+  font-size: 15px;
+  color: #24AFB5;
+  margin-top: 3%;
 }/*# sourceMappingURL=styles.css.map */
