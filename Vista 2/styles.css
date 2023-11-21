@@ -477,4 +477,84 @@
   font-weight: 400;
   line-height: 30px;
   word-wrap: break-word;
+}
+#container #lastSection #secondRow {
+  display: flex;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+#container #lastSection #secondRow ul {
+  list-style-type: none;
+  flex-direction: column;
+  margin-top: 218px;
+  margin-left: 50px;
+}
+#container #lastSection #secondRow ul h1 {
+  color: #1c1c1c;
+  font-size: 15px;
+  font-family: "InterB";
+  font-weight: 600;
+  line-height: 40px;
+  word-wrap: break-word;
+}
+#container #lastSection #secondRow ul a {
+  text-decoration: none;
+  color: #969696;
+  font-size: 15px;
+  font-family: "InterR";
+  font-weight: 400;
+  line-height: 30px;
+  word-wrap: break-word;
+}
+#container #lastSection #thirdLastMenu {
+  display: flex;
+}
+#container #lastSection #thirdLastMenu ul {
+  list-style-type: none;
+  flex-direction: column;
+  margin-top: 239px;
+  margin-left: 83px;
+}
+#container #lastSection #thirdLastMenu ul img {
+  margin-right: 10px;
+}
+#container #lastSection #thirdLastMenu ul a {
+  text-decoration: none;
+  color: #969696;
+  font-size: 15px;
+  font-family: "InterR";
+  font-weight: 400;
+  line-height: 30px;
+  word-wrap: break-word;
+}
+#container #footerEnd {
+  margin-top: 100px;
+  background-color: #F7F7F7;
+  height: 50px;
+}
+#container #footerEnd #menuLast p {
+  margin-left: 300px;
+  color: #969696;
+  font-family: "InterR";
+  font-weight: 400;
+  line-height: 18px;
+  word-wrap: break-word;
+}
+#container #footerEnd #menuLast {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-grow: 1;
+  margin-right: 300px;
+  font-size: 13px;
+  height: 100%;
+}
+#container #footerEnd #menuLast > ul {
+  display: flex;
+  list-style-type: none;
+  flex-direction: row;
+  gap: 40px;
+}
+#container #footerEnd #menuLast a {
+  color: #969696;
 }/*# sourceMappingURL=styles.css.map */
