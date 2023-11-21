@@ -17,6 +17,8 @@ $fuentebold: "InterB";
 $colorlist: #1c1c1c;
 $colortext: #585757;
 $colorbox: #24AFB5;
+$colorfecha: #969696;
+$colorfooter: #F7F7F7;
 
 * {
     font-family: $fuente;
@@ -284,11 +286,15 @@ $colorbox: #24AFB5;
 
         #gridCont {
             display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-columns: 1fr 0.5fr 1fr 0.5fr 1fr;
             text-align: center;
             gap: 30;
             margin-top: 100px;
             margin-bottom: 100px;
+
+            #flecha img {
+                width: 40%;
+            }
 
             img {
                 width: 15%;
@@ -313,4 +319,329 @@ $colorbox: #24AFB5;
             }
         }
     }
+
+    #sextoCont {
+        display: grid;
+        grid-template-columns: 1fr 0.5fr;
+        text-align: justify;
+        margin-left: 145px;
+
+
+        #iphonex {
+            grid-column: 3;
+            margin-top: 100px;
+
+            img {
+                margin-right: 200px;
+            }
+        }
+
+        #contentCont1 {
+            margin-top: 100px;
+
+            img #estrella {
+                width: 10%;
+            }
+
+            h1 {
+                color: $colorlist;
+                font-size: 48px;
+                font-family: $fuentebold;
+                margin-top: 20px;
+                font-weight: 700;
+                line-height: 60px;
+                word-wrap: break-word
+            }
+
+            p {
+                color: $colortext;
+                font-size: 20px;
+                font-family: $fuente;
+                font-weight: 400;
+                line-height: 30px;
+                margin-top: 20px;
+                word-wrap: break-word
+            }
+
+            a {
+                color: $colorbox;
+                margin-top: 10px;
+                font-size: 20px;
+                font-family: $fuentebold;
+                font-weight: 600;
+                line-height: 40px;
+                word-wrap: break-word
+            }
+
+        }
+    }
+
+    #septCont {
+        border-top: 1px solid $colortext;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        text-align: justify;
+        border-bottom: 1px solid $colortext;
+
+        #contentCont3 {
+            margin-top: 100px;
+            margin-left: 80px;
+        }
+
+        h1 {
+            color: $colorfecha;
+            font-size: 11px;
+            font-family: $fuente;
+            font-weight: 400;
+            text-transform: uppercase;
+            line-height: 41px;
+            letter-spacing: 1px;
+            word-wrap: break-word
+        }
+
+        h2 {
+            color: $colorlist;
+            font-size: 24px;
+            font-family: $fuentebold;
+            font-weight: 600;
+            margin-bottom: 10px;
+            line-height: 32px;
+            word-wrap: break-word
+        }
+
+        p {
+            color: $colortext;
+            font-size: 15px;
+            font-family: $fuente;
+            font-weight: 400;
+            line-height: 22px;
+            word-wrap: break-word
+        }
+
+        #bottomText1 {
+            display: flex;
+            margin-top: 10px;
+            margin-bottom: 100px;
+
+            p {
+                margin-right: 10px;
+            }
+
+            img {
+                margin-right: 10px;
+            }
+        }
+    }
+
+    #sectionCont8 {
+        display: flex;
+        text-align: center;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        border-bottom: 1px solid grey;
+
+        #textSection {
+            margin-top: 150px;
+            color: $colorlist;
+            font-size: 48px;
+            font-family: $fuentebold;
+            font-weight: 700;
+            line-height: 60px;
+            word-wrap: break-word;
+        }
+
+        #parSection {
+            color: #585757;
+            font-size: 20px;
+            font-family: $fuente;
+            font-weight: 400;
+            line-height: 30px;
+            margin-top: 20px;
+        }
+
+        #formSection {
+            margin-top: 20px;
+            width: 100%;
+            height: 100%;
+        }
+
+        #formSection input[type="text"] {
+            color: #585757;
+            opacity: 0.40;
+            outline: none;
+            width: 400px;
+            height: 40px;
+            font-size: 20px;
+            font-family: $fuente;
+            border: 1px solid #585757;
+            border-radius: 5px;
+            font-weight: 400;
+            line-height: 30px;
+            word-wrap: break-word
+        }
+
+        #formSection input[type="submit"] {
+            background-color: $colorbox;
+            width: 150px;
+            height: 43px;
+            color: white;
+            font-size: 20px;
+            border: 1px solid $colorbox;
+            font-family: $fuente;
+            border-radius: 5px;
+            margin-left: 13px;
+            font-weight: 600;
+            line-height: 26px;
+            word-wrap: break-word
+        }
+
+        #smallText {
+            color: #969696;
+            font-size: 13px;
+            font-family: $fuente;
+            margin-top: 15px;
+            margin-bottom: 100px;
+            font-weight: 400;
+            line-height: 18px;
+            word-wrap: break-word
+        }
+    }
+
+    #lastSection {
+        display: flex;
+
+        #logo img {
+
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap-reverse;
+            justify-content: flex-start;
+            margin-top: 100px;
+            margin-left: 100px;
+        }
+
+        #logo #lastMenu {
+            display: flex;
+            column-gap: 10px;
+
+            ul {
+                list-style-type: none;
+                flex-direction: column;
+                margin-top: 70px;
+                margin-left: 100px;
+            }
+
+            ul h1 {
+                color: $colorlist;
+                font-size: 15px;
+                font-family: $fuentebold;
+                font-weight: 600;
+                line-height: 40px;
+                word-wrap: break-word
+            }
+
+            ul a {
+                text-decoration: none;
+                color: $colorfecha;
+                font-size: 15px;
+                font-family: $fuente;
+                font-weight: 400;
+                line-height: 30px;
+                word-wrap: break-word
+            }
+        }
+
+        #secondRow {
+            display: flex;
+            column-gap: 10px;
+
+            ul {
+                list-style-type: none;
+                flex-direction: column;
+                margin-top: 218px;
+                margin-left: 50px;
+            }
+
+            ul h1 {
+                color: $colorlist;
+                font-size: 15px;
+                font-family: $fuentebold;
+                font-weight: 600;
+                line-height: 40px;
+                word-wrap: break-word
+            }
+
+            ul a {
+                text-decoration: none;
+                color: $colorfecha;
+                font-size: 15px;
+                font-family: $fuente;
+                font-weight: 400;
+                line-height: 30px;
+                word-wrap: break-word
+            }
+        }
+        #thirdLastMenu {
+            display: flex;
+            ul {
+                list-style-type: none;
+                flex-direction: column;
+                margin-top: 239px;
+                margin-left: 83px;
+            }
+
+            ul img {
+                margin-right: 10px;
+            }
+
+            ul a {
+                text-decoration: none;
+                color: $colorfecha;
+                font-size: 15px;
+                font-family: $fuente;
+                font-weight: 400;
+                line-height: 30px;
+                word-wrap: break-word
+            }
+        }
+    }
+
+    #footerEnd {
+        margin-top: 100px;
+        background-color: $colorfooter;
+        height: 50px ;
+
+       #menuLast p {
+            margin-left: 300px;
+            color: $colorfecha;
+            
+            font-family: $fuente;
+            font-weight: 400;
+            line-height: 18px;
+            word-wrap: break-word
+        }
+
+        #menuLast {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-grow: 1;
+            margin-right: 300px;
+            font-size: 13px;
+            height: 100%;
+        }
+    
+        #menuLast > ul {
+            display: flex;
+            list-style-type: none;
+            flex-direction: row;
+            gap: 40px;
+        }
+    
+        #menuLast a {
+            color: $colorfecha;
+        }
+    }
+
 }
